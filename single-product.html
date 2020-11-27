@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product | details</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="menu">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo-image" src="images/Logo-Long.jpg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart <span class="badge badge-danger">1</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container padding-top-100">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mb-5">
+                    <img src="images/pexels-luriko-yamaguchi-2804282.jpg" alt="" class="card-img-top max-height-600">
+                </div>
+            </div>
+            <div class="col-md-6 pl-5">
+                <h2 class="mb-3">Product Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores illum, eos deserunt, est distinctio sunt.</p>
+
+                <form action="">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1" class="font-weight-bold">Select Category</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option value="200" selected>200g</option>
+                            <option value="500">500g</option>
+                            <option value="1000">1Kg</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="select2" class="font-weight-bold">Select Amount</label>
+                        <input class="form-control" type="number" id="select2" name="amount" value="1">
+                    </div>
+                    <h4 id="price">Price: </h3>
+                    <button class="btn btn-info mt-5" type="button">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body></html>

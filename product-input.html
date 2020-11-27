@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="menu">
+        <a class="navbar-brand" href="index.html">
+            <img class="logo-image" src="images/Logo-Long.jpg" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="blog.html">Blog <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">Cart <span class="badge badge-danger">1</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="admin.html">Login<span class="badge badge-danger">1</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <h2 class="display-3 my-5 py-4 text-center">Dashboard</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="name">Product Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="name" name="product_name" placeholder="Product Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Price <span class="text-danger">*</span></label>
+                <input type="number" class="form-control" id="price" name="price" placeholder="Enter Price" required>
+            </div>
+
+            <div class="form-group">
+                <label for="price">Product Description <span class="text-danger">*</span></label>
+                <textarea class="form-control" name="productDescription" id="productDescription" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="custom-file">
+                    <input type="file" name="productImage" class="custom-file-input" id="productImage">
+                    <label class="custom-file-label" for="productImage">Choose file</label>
+                </div>
+            </div>
+            <input class="btn btn-success" type="submit" name="save" value="Save">
+            <input class="btn btn-success d-none" type="submit" name="update" value="Update">
+        </form>
+    </div>
+
+
+
+    <div class="container">
+        <h2 class="display-3 my-5 py-4 text-center">Orders</h2>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid">
+        <hr>
+        <h2 class="text-center">All Products</h2>
+        <div class="d-flex flex-wrap justify-content-center padding-top-60">
+            <div class="card max-width-400 mx-3 mb-5">
+                <img src="images/pexels-luriko-yamaguchi-2804282.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <div class="card-title font-weight-bold">Product Name</div>
+                    <p class="card-text">BDT. 200</p>
+                    <a href="#" class="btn btn-info btn-sm">Delete</a>
+                    <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                </div>
+            </div>
+            <div class="card max-width-400 mx-3 mb-5">
+                <img src="images/pexels-luriko-yamaguchi-2804282.jpg" alt="" class="card-img-top">
+                <div class="card-body">
+                    <div class="card-title font-weight-bold">Product Name</div>
+                    <p class="card-text">BDT. 200</p>
+                    <a href="#" class="btn btn-info btn-sm">Delete</a>
+                    <a href="#" class="btn btn-warning btn-sm">Edit</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
+    <script src="js/script.js"></script>
+</body></html>
